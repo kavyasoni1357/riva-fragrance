@@ -53,5 +53,19 @@
     <p>© 2025 RIVA Fragrance. All rights reserved.</p>
     <p>Follow us @RivaFragrance</p>
   </footer>
+  <script>
+  const fadeElements = document.querySelectorAll('.fade-in');
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  });
+
+  fadeElements.forEach(el => observer.observe(el));
+</script>
+
 </body>
 </html>
