@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery – Riva Fragrance</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .gallery-hero {
+      text-align: center;
+      padding: 3rem 1rem;
+      background: linear-gradient(to right, #fffaf5, #f8f3e8);
+    }
+    .gallery-hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      color: #b88a44;
+    }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+      padding: 2rem;
+    }
+    .gallery-grid img {
+      width: 100%;
+      border-radius: 8px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .gallery-grid img:hover {
+      transform: scale(1.03);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">RIVA</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="collections.html">Collections</a></li>
+        <li><a href="journal.html">Journal</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="gallery-hero">
+    <h1>Riva Gallery</h1>
+    <p>Moments, moods, and magic — captured through fragrance.</p>
+  </section>
+
+  <section class="gallery-grid">
+    <img src="https://source.unsplash.com/400x500/?perfume,bottle" alt="Perfume Image 1" />
+    <img src="https://source.unsplash.com/400x500/?luxury,perfume" alt="Perfume Image 2" />
+    <img src="https://source.unsplash.com/400x500/?flower,fragrance" alt="Perfume Image 3" />
+    <img src="https://source.unsplash.com/400x500/?aroma,scent" alt="Perfume Image 4" />
+    <img src="https://source.unsplash.com/400x500/?glass,bottle" alt="Perfume Image 5" />
+    <img src="https://source.unsplash.com/400x500/?fashion,perfume" alt="Perfume Image 6" />
+  </section>
+
+  <footer>
+    <p>© 2025 RIVA Fragrance. All rights reserved.</p>
+  </footer>
+</body>
+</html>
