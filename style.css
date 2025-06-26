@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
-  background-color: #fffaf5;
+  background-color: #fffdf8;
   color: #333;
 }
 
@@ -11,12 +11,15 @@ header {
   align-items: center;
   padding: 1rem 2rem;
   background-color: #ffffff;
-  border-bottom: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .logo {
   font-family: 'Playfair Display', serif;
-  font-size: 1.8rem;
+  font-size: 2rem;
   color: #b88a44;
   font-weight: bold;
 }
@@ -33,27 +36,30 @@ nav a {
   text-decoration: none;
   color: #333;
   font-weight: 500;
+  transition: color 0.3s ease;
 }
 
 nav a:hover {
   color: #b88a44;
 }
 
-.hero {
+.hero, .about-hero, .collections-hero {
   text-align: center;
-  padding: 5rem 1rem;
-  background-color: #fcf8f2;
+  padding: 4rem 1rem;
+  background: linear-gradient(to right, #fffaf5, #f8f3e8);
 }
 
-.hero-text h1 {
+.hero h1, .about-hero h1, .collections-hero h1 {
   font-family: 'Playfair Display', serif;
   font-size: 2.5rem;
   margin-bottom: 1rem;
 }
 
-.hero-text p {
+.hero p, .about-hero p, .collections-hero p {
   font-size: 1.2rem;
-  margin-bottom: 2rem;
+  color: #555;
+  max-width: 600px;
+  margin: auto;
 }
 
 .btn {
@@ -63,10 +69,41 @@ nav a:hover {
   padding: 0.8rem 1.5rem;
   border-radius: 4px;
   font-weight: bold;
+  margin-top: 1rem;
+  display: inline-block;
+  transition: background-color 0.3s ease;
 }
 
 .btn:hover {
   background-color: #a6793b;
+}
+
+.about-content {
+  padding: 2rem 1rem;
+  max-width: 800px;
+  margin: auto;
+  line-height: 1.7;
+  color: #444;
+}
+
+.collections-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.perfume-card {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.perfume-card h2 {
+  margin-bottom: 0.5rem;
+  color: #b88a44;
 }
 
 footer {
@@ -75,5 +112,5 @@ footer {
   background-color: #f5eee6;
   color: #666;
   font-size: 0.9rem;
+  margin-top: 3rem;
 }
-
